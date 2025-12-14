@@ -1,0 +1,212 @@
+/* Bill McCarthy & Associates - Basic Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #272626;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background-color: #2f5aae;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+header .site-title {
+    font-family: "Playfair Display SC", serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header .site-description {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #999999;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+    min-height: 400px;
+}
+
+h1 {
+    font-family: "Playfair Display SC", serif;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #bc002f;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #bc002f;
+}
+
+h2 {
+    font-family: "Playfair Display SC", serif;
+    font-size: 1.75em;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 25px 0 15px;
+    color: #2f5aae;
+}
+
+h3 {
+    font-family: "Playfair Display SC", serif;
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #2f5aae;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bc002f;
+    transition: 0.3s;
+}
+
+/* Contact Info Box */
+.contact-box {
+    background-color: #f4f5f7;
+    padding: 30px;
+    margin: 30px 0;
+    border-left: 4px solid #bc002f;
+}
+
+.contact-box h2 {
+    margin-top: 0;
+}
+
+.contact-box p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-box strong {
+    color: #bc002f;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.service-item {
+    padding: 20px;
+    background-color: #f4f5f7;
+    border-radius: 5px;
+}
+
+.service-item h3 {
+    color: #2f5aae;
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #ededed;
+    color: #272626;
+    padding: 30px 0;
+    font-family: "Playfair Display SC", serif;
+    margin-top: 40px;
+}
+
+footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #272626;
+}
+
+footer a:hover {
+    color: #bc002f;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #dddddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
